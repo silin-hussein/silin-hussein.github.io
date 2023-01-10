@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    
+}
+
+.image {
+    width: 40%;
+}
+   
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+
+

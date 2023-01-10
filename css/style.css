@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/***************************************Header*******************************************/
+
+.header img{
+  width: 6rem;
+  margin-top: 5%;
+} 
+
+.logo {
+  margin-left: 2%;
+}
+
+.header {
+  background-color: #639597;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.headerright {
+  display: flex;
+  margin-left: 40vw;
+  margin-right: 5%;
+  padding-top: 4%;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.headerright a {
+  padding: 14px 20px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.othersite:hover {
+  border-radius: 10px;
+  background-color: rgba(167, 126, 201, 0.144);
+  box-shadow: 1px 2px 1px black;
+}
+
+.currentsite {
+  text-transform: uppercase;
+  color: aliceblue;
+  background-color: rgb(38, 77, 77);
+  border-radius: 8px;
+}
+
+.currentsite:hover{
+  background-color: rgb(126, 126, 201);
+  box-shadow: 1px 2px 1px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerright {   
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 80%;
+  }
+
+  .header img {
+    display: none;
+  }
+
+ 
+}
+/***************************************BODY*******************************************/
+
+.background-image {
+    background-image: url(../img/homeBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.background {
+    background-color: rgb(58, 12, 119);
+    height: 600px;
+}
+
+
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(91, 124, 125));
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    padding-top: 20%;
+}
+
+#banner h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 15vh;
+}
+
+
+/***********************************************GALERIE*********************************************/
+#section2 {
+  margin-top: 6%;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  
+  .item img{                    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+ 
+
+  @media screen and (max-width: 1000px){
+    .items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #section2 {
+      margin-top: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .items{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section2 {
+      margin-top: 55%;
+    }
+  }
+
+
+/***********************************************LEISTUNGEN*********************************************/
+
+
+.heading {
+  text-align: center;
+}
+
+.header p {
+  margin-top: 1%;
+  font-size: 0.93rem;
+  font-weight: 300;
+}
+.quote {
+  color: #0091a7;
+}
+
+#service {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+
+.meta-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+  padding: 10px 20px;
+}
+
+.meta-container .title {
+  padding: 0;
+  margin: 10px 0;
+  font-size: 22px;
+  color: #0076b6;
+}
+
+.meta-container .desc {
+  font-size: 13px;
+  text-align: center;
+  color: #373737;
+} 
+
+.cardcontainer {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 0 3px 0 #00000073;
+  width: 470px;
+  height: 400px;
+  margin: 10px;
+}
+
+.card-image {
+  background-color: aqua;
+  height: 220px;
+  margin-bottom: 2%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bild-1 {
+  background-image: url(../img/workingEm.jpg);
+}
+
+.bild-2 {
+  background-image: url(../img/incar.jpg);
+}
+
+.bild-3 {
+  background-image: url(../img/carmirror.jpg);
+}
+
+
+.button-container {
+  display: flex;
+  margin-left: 10%;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  height: 40px;
+}
+
+.button-container .button {
+  width: 100%;
+  padding: 6px 0;
+  text-decoration: none;
+  background: linear-gradient(125deg, #00f2ff 0%, #0091a7 60%);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+
+}
+
+.button-container .button:hover {
+  padding-left: 15px;
+}
+
+#section3 {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.itemss{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    overflow: hidden;
+  }
+
+  
+  .autos{                    
+    width: 350px;
+    height: 130px;
+    object-fit: cover;
+  }
+  
+ 
+
+  @media screen and (max-width: 1000px){
+    .itemss{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #section3 {
+      margin-top: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .itemss{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section3 {
+      margin-top: 55%;
+    }
+  }
+
+
+
+/***********************************************ANFRAGEN*********************************************/
+
+.anfragenbox {
+  margin: 10%;
+  background-color: #6395975d;
+  border: 2px solid rgb(26, 110, 116);
+  height: 200%;
+  width: 80%;
+}
+
+.formulname {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Martian Mono', monospace;
+  padding-top: 2%;
+}
+
+form {
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 3%;
+  display: flex;
+}
+
+.leftcontainer {
+  margin-right: 5%;
+  width: 50%;
+  
+}
+
+.rightcontainer {
+  padding-top: 3%;
+}
+
+.rightinput {
+  margin-top: 1%;
+}
+
+.rightinput input {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.voname, .eemail, .adresse, .firma, .lleistungen, .kontaktform {
+  margin-left: 2%;
+}
+
+.naname {
+  margin-left: 22%;
+}
+
+.ttele {
+  margin-left: 24%;
+}
+
+#anmerkung {
+  resize: vertical;
+}
+
+.Zeit, .leist {
+  margin-top: 3%;
+}
+
+.kontaktform {
+  margin-top: 3%;
+}
+
+.hinweis {
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+@media screen and (max-width: 1000px){
+  form {
+    flex-wrap: wrap;
+  }
+
+  .anfragenbox {
+    margin-top: 40%;
+  }
+}
+
+
+/***********************************************ANFRAGEN*********************************************/
+
+.title69 {
+  text-transform: uppercase;
+  margin-top: 10%;
+  text-align: center;
+  font-family: 'Martian Mono', monospace;
+}
+
+
+.imprcontainer {
+    display: flex;
+    padding: 30px 20px;
+}
+
+.ipmr1, .ipmr2 {
+  width: 80%;
+  padding: 3%;
+  margin: 3%;
+  background-color: #6395975d;
+  border: 2px solid rgb(26, 110, 116);
+}
+
+.ipmr1 p, .ipmr2 p {
+  margin-top: 2%;
+}
+
+.h3 {
+  margin-bottom: 2%;
+}
+
+.imprcontainer a {
+  text-decoration: none;
+  color: black;
+}
