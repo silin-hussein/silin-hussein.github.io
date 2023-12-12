@@ -4,29 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./_css/style_mainpage.css" type="text/css">
+    <script src="script.js"></script>
     <title>Home</title>
 </head>
-    <body>
-        <div class="header">
-            <a href="https://www.nissan.at/" target="_blank"  class="logo"><img src="./img/Logo.png"></a>
-            <div class="headerright">
-                <a class="currentsite" href="./index.html">Home</a>
-                <a class="othersite" href="./pages/leistungen.html">Leistungen</a>
-                <a class="othersite" href="./pages/galerie.html">Galerie</a>
-                <a class="othersite" href="./pages/kontakt.html">Kontakt</a>
-                <a class="othersite" href="./pages/anfrage.html">Anfragen</a>
-            </div>
+
+<body id="style-2">
+
+
+<!---------------------------------------Navi------------------------------------------------>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a target="_blank" href="./index.html">HOME</a></li>
+            <li><a target="_blank" href="#">LINK TO GITHUB</a></li>
+            <li><a target="_blank" href="#">SELFMADE PHOTOGRAPHS</a></li>
+            <li><a target="_blank" href="#">EXAMPLE FIGMA PROJECT</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="./images/menu.png" id="menu">
+</div>
+
+
+<!------------------------------------Main----------------------------------------------->
+
+<div class="body1">
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Portfolio</h1>
+            <p>Silin Hussein</p>
         </div>
-        <div class="background-image">
-            <div id="banner">
-                <div class="title">
-                    <h1>NISSAN</h1>
+    </section>
+</div>
+
+<section  class="featuresTwo ">
+        <div class="container container2">
+                <div class="column column-60">
+                    <h1 class="heading animated-element"><b>About Me: The ABCs – Code, Creativity and a Cup of Coffee</b></h1>
+                    <p class="bodyText animated-element">
+
+                        Greetings! I'm Silin Hussein, a 17-year-old Media Technology enthusiast embarking on the exciting challenges of my third year of education. My world revolves around JavaScript, TypeScript, PHP, and the artistry of web design, with a sprinkle of Java, photography, and video production thrown into the mix – always eager to dive into new realms of knowledge.
+
+                        Beyond the coding lines, catch me mastering design tools like Figma and Adobe, and crafting innovative projects that showcase my skills. Fueled by creativity and a cup of coffee, I seamlessly blend structured code with artistic expression.
+
+                        Whether I'm navigating the digital landscape or capturing moments through my lens, I'm a dynamic individual on a perpetual quest for knowledge.
+                    </p>
                 </div>
-            </div>
-        </div>    
-            
-            
+
+                <div class="column">
+                    <img src="images/me.jpg">
+                </div>
+
         </div>
-    </body>
+</section>
+
+<section id="featuresTwo" class="featuresTwo">
+
+    <div class="container">
+
+        <div class="column">
+            <img class="featuresImg" src="./images/checklist.png"/>
+        </div>
+
+        <div class="column">
+            <h1 class="heading animated-element">Why me?</h1>
+            <p class="bodyText animated-element">Partnering with me unleashes a winning strategy, blending cool tech, creative vibes, and real human connections to help you reach your goals <br>With me, you gain...</p>
+
+            <div class="featureBoxContainer">
+
+                <div class="featureBox">
+                    <div class="featureIcon animated-element"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+                    <h6 class="title animated-element">Energy and Enthusiasm</h6>
+                </div>
+
+                <div class="featureBox">
+                    <div class="featureIcon animated-element"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+                    <h6 class="title animated-element">Adaptability and Resilience</h6>
+                </div>
+
+                <div class="featureBox">
+                    <div class="featureIcon animated-element"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+                    <h6 class="title animated-element">Strong Interpersonal Skills</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!------------------------------------Script für menü----------------------------------------------->
+
+
+<script>
+	var menuBTN = document.getElementById('menuBtn');
+	var sideNav = document.getElementById('sideNav');
+	var menu = document.getElementById('menu');
+
+	sideNav.style.right = '-250px';
+
+	menuBTN.onclick = function () {
+		if (sideNav.style.right == '-250px') {
+			sideNav.style.right = '0';
+			menu.src = './images/close.png';
+		} else {
+			sideNav.style.right = '-250px';
+			menu.src = './images/menu.png';
+		}
+	};
+</script>
+
+
+</body>
 </html>
